@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Netflix</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body
+    class="relative flex min-h-screen flex-col overflow-x-hidden bg-black font-['helvetica'] shadow-[inset_0px_0px_49px_28px_rgba(0,0,0,0.35)] sm:bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/0ef67cc5-0aa7-47cf-87bd-7f595afc7cfb/ef24f8c5-dacd-41c4-a5fd-94cc0d0027c8/BR-pt-20221107-popsignuptwoweeks-perspective_alpha_website_medium.jpg')] sm:before:absolute sm:before:top-0 sm:before:h-full sm:before:w-full sm:before:bg-black/50 sm:before:content-[''] sm:before:[z-index:_-1]"
+  >
+    <header class="w-full py-5 px-[3vw] xs:py-6">
+      <svg
+        viewBox="0 0 111 30"
+        data-uia="netflix-logo"
+        class="w-[74px] fill-netflixRed xs:w-[166px]"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <g id="netflix-logo">
+          <path
+            d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
+            id="Fill-14"
+          ></path>
+        </g>
+      </svg>
+    </header>
+    <form
+      action="#"
+      id="login"
+      class="mx-auto mb-[90px] flex w-full flex-col gap-4 rounded-[4px] p-[5%] py-4 sm:box-content sm:h-[560px] sm:w-[314px] sm:bg-black/80 sm:px-[68px] sm:py-[60px] sm:pb-[40px] [&>label,_button]:rounded-[4px]"
+    >
+      <legend class="mb-[10px] text-3xl font-semibold text-white">
+        Entrar
+      </legend>
+      <label
+        class="relative box-border flex cursor-text flex-col bg-inputGray py-1.5 px-5 pt-5 focus-within:bg-inputGrayFocus [&:has(input:focus)_label]:top-[30%] [&:has(input:focus)_label]:[transform:_scale(0.75)_translateX(-1px)] [&:has(input:not(:placeholder-shown))_label]:top-[30%] [&:has(input:not(:placeholder-shown))_label]:[transform:_scale(0.75)_translateX(-1px)] [&:has(input:invalid):has(input:not(:focus))]:shadow-[0px_2px_0px_0px_rgba(213,120,4,1)] [&:has(input:invalid):has(input:not(:focus))_+_p]:inline"
+        id="email"
+      >
+        <label
+          class="text-md pointer-events-none absolute left-5 top-1/2 leading-[0px] text-labelGray [transition:_all_0.1s_linear] [transform-origin:_top_left]"
+          >Email ou número de telefone</label
+        >
+        <input
+          class="text-md w-full bg-transparent text-white focus:outline-none"
+          type="email"
+          placeholder=" "
+        />
+      </label>
+      <p class="hidden text-sm text-warning">
+        Informe um email ou número de telefone válido.
+      </p>
+      <label
+        class="relative box-border flex cursor-text flex-col bg-inputGray py-1.5 px-5 pt-5 focus-within:bg-inputGrayFocus [&:has(input:focus)_label]:top-[30%] [&:has(input:focus)_label]:[transform:_scale(0.75)_translateX(-1px)] [&:has(input:not(:placeholder-shown))_label]:top-[30%] [&:has(input:not(:placeholder-shown))_label]:[transform:_scale(0.75)_translateX(-1px)] [&:has(input:invalid):has(input:not(:focus))]:shadow-[0px_2px_0px_0px_rgba(213,120,4,1)] [&:has(input:invalid):has(input:not(:focus))_+_p]:inline"
+      >
+        <label
+          class="text-md pointer-events-none absolute left-5 top-1/2 leading-[0px] text-labelGray [transition:_all_0.1s_linear] [transform-origin:_top_left]"
+          >Senha</label
+        >
+        <input
+          class="text-regular text-md w-full bg-transparent text-white focus:outline-none"
+          type="password"
+          id="email"
+          placeholder=" "
+          pattern=".{4,60}"
+        />
+      </label>
+      <p class="hidden text-sm text-warning">
+        A senha deve ter entre 4 e 60 caracteres.
+      </p>
+      <button
+        class="mt-7 w-full rounded-[4px] bg-netflixRed py-3 font-bold text-white"
+      >
+        Entrar
+      </button>
+      <section class="flex justify-between">
+        <div class="flex items-center gap-1">
+          <input
+            class="relative h-4 w-4 appearance-none rounded-[2px] bg-lightGray bg-none font-extrabold before:absolute before:top-1/2 before:left-[1px] before:h-auto before:w-auto before:leading-[0px] before:[transform:_scaleY(0.75)] checked:before:content-['✔'] focus:bg-lightestGray"
+            type="checkbox"
+            id="remember"
+          />
+          <label class="text-sm text-lightestGray" for="remember"
+            >Lembre-se de mim</label
+          >
+        </div>
+        <a class="text-sm text-lightestGray" href="#">Precisa de ajuda?</a>
+      </section>
+      <section class="mt-[5%] sm:mt-[70px]">
+        <p class="inline text-lg text-lightGray">Novo por aqui?</p>
+        <a class="text-lg font-medium text-white" href="#">Assine agora.</a>
+      </section>
+      <div
+        class="text-[0.8rem] font-medium leading-4 text-lightGray sm:mb-[140px]"
+      >
+        <p class="inline">
+          Esta página é protegida pelo Google reCAPTCHA para garantir que você
+          não é um robô.
+        </p>
+        <a class="text-blue-700" href="#">Saiba mais.</a>
+      </div>
+    </form>
+    <footer
+      class="mt-auto w-full border-t-[1px] border-lightGray p-8 sm:border-0 sm:bg-black/70"
+    >
+      <section class="mx-auto max-w-[1000px]">
+        <p class="text-md text-lightGray">Dúvidas? Ligue 0800 591 8942</p>
+        <div
+          class="mt-8 grid gap-3 text-xs text-lightGray [grid-template-columns:_repeat(auto-fit,_minmax(200px,_1fr))]"
+        >
+          <a href="#">Perguntas Frequentes</a>
+          <a href="#">Central de Ajuda</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Privacidade</a>
+          <a href="#">Preferências de cookies</a>
+          <a href="#">Informações corporativas</a>
+        </div>
+        <select
+          class="relative mt-8 rounded-[2px] border-[1px] border-lightGray/50 bg-black px-4 py-2 text-lightGray"
+          name="idioma"
+          id="idioma"
+          value="pt"
+        >
+          <option value="pt">🌐 Português</option>
+          <option value="en">🌐 English</option>
+        </select>
+      </section>
+    </footer>
+  </body>
+</html>
