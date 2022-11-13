@@ -15,7 +15,7 @@ _[Notes can be found here](https://gabriel-araujo.notion.site/Tailwind-CSS-96397
 - Fully responsive.
 - Input validation with warnings.
 - Very similar UI and forms.
-- Zero Javascript.
+- Zero Javascript. (The only .js file in this repo is tailwind.config.js)
 
 ## Comparison
 
