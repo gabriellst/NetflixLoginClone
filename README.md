@@ -17,11 +17,6 @@ _[Notes can be found here](https://gabriel-araujo.notion.site/Tailwind-CSS-96397
 - Very similar UI and forms.
 - Zero Javascript (The only .js file in this repo is tailwind.config.js).
 
-## Comparison
-
-![Mine](https://gabrielaraujo.xyz/netflix/comparison/mine_edit.png)
-![Theirs](https://gabrielaraujo.xyz/netflix/comparison/theirs_edit.png)
-
-## [**Check it out!**](https://gabrielaraujo.xyz/netflix)
+## [**Check it out!**](https://gabriellst.github.io/NetflixLoginClone/)
 
 Thank you for your time :)
